@@ -10,12 +10,13 @@ function Destinations(): JSX.Element {
 
   return (
     <>
-      <main className="w-full">
+      <main className="w-full min-h-screen">
+        
         <div
-          className="w-full min-h-screen pt-28 px-6 pb-16 sm:justify-center flex flex-col  sm:bg-destmobile md:bg-desttablet lg:bg-destdesktop bg-no-repeat bg-cover md:pt-[125px] md:pb-16 md:px-24 
+          className="w-full min-h-screen  pt-28 px-6 pb-16 sm:justify-center flex flex-col  sm:bg-destmobile md:bg-desttablet lg:bg-destdesktop bg-no-repeat bg-cover md:pt-[125px] md:pb-16 md:px-24 
         lg:flex-row lg:justify-center lg:items-center lg:px-40 lg:pt-[180px] lg:pb-28"
         >
-          <div className="lg:w-[55%]">
+          <div className="lg:w-[55%] ">
             <div className="w-full flex flex-row justify-center items-center md:justify-start">
               <span
                 className="font-[Barlow-Condensed] text-center text-lg leading-5 tracking-[2.7px] uppercase text-white mix-blend-normal opacity-25 md:text-left md:text-lg md:leading-6 md:tracking-[3.375px]
@@ -40,36 +41,60 @@ function Destinations(): JSX.Element {
           </div>
           <div className="lg:w-[45%] lg:ml-36 lg:mt-8 sm:flex  sm:flex-col sm:items-center">
             <div className="w-full flex flex-row justify-around  mt-4 px-8 md:px-20 lg:pr-28 lg:pl-0 lg:justify-between  ">
-              <Link
-                to="/destination/moon"
-                className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer
-            md:text-base md:leading-5 md:tracking-[2.7px] "
-              >
-                moon
-              </Link>
+              <div className="flex flex-col">
+                <Link
+                  to="/destination/moon"
+                  className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer
+            md:text-base md:leading-5 md:tracking-[2.7px] pb-2 "
+                >
+                  moon
+                </Link>
+                <div
+                  className="w-full bg-white h-[3px] "
+                  style={{ display: name === "moon" ? "block" : "none" }}
+                ></div>
+              </div>
 
-              <Link
-                to="/destination/mars"
-                className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer
-            md:text-base md:leading-5 md:tracking-[2.7px]"
-              >
-                mars
-              </Link>
+              <div className="flex flex-col">
+                <Link
+                  to="/destination/mars"
+                  className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer
+            md:text-base md:leading-5 md:tracking-[2.7px] pb-2 "
+                >
+                  mars
+                </Link>
+                <div
+                  className="w-full bg-white h-[3px] "
+                  style={{ display: name === "mars" ? "block" : "none" }}
+                ></div>
+              </div>
 
-              <Link
-                to="/destination/europa"
-                className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer
-            md:text-base md:leading-5 md:tracking-[2.7px]"
-              >
-                europa
-              </Link>
-              <Link
-                to="/destination/titan"
-                className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer
-            md:text-base md:leading-5 md:tracking-[2.7px]"
-              >
-                titan
-              </Link>
+              <div className="flex flex-col">
+                <Link
+                  to="/destination/europa"
+                  className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer
+            md:text-base md:leading-5 md:tracking-[2.7px] pb-2 "
+                >
+                  europa
+                </Link>
+                <div
+                  className="w-full bg-white h-[3px] "
+                  style={{ display: name === "europa" ? "block" : "none" }}
+                ></div>
+              </div>
+              <div className="flex flex-col">
+                <Link
+                  to="/destination/titan"
+                  className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer
+            md:text-base md:leading-5 md:tracking-[2.7px] pb-2 "
+                >
+                  titan
+                </Link>
+                <div
+                  className="w-full bg-white h-[3px] "
+                  style={{ display: name === "titan" ? "block" : "none" }}
+                ></div>
+              </div>
             </div>
             <h1
               className="text-[56px] leading-[64px] text-white text-center font-[Bellefair] mt-8 uppercase tracking-[4px] font-normal
