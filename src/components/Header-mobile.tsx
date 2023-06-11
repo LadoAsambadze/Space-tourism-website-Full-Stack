@@ -36,9 +36,12 @@ export default function Header() {
               <span className="text-base leading-5 tracking-[2.7px]  font-[700] pb-8 text-white">
                 00
               </span>
-              <span className="text-base leading-5 tracking-[2.7px] ml-3 text-white pointer ">
+              <Link
+                to="/"
+                className="text-base leading-5 tracking-[2.7px] ml-3 text-white pointer "
+              >
                 HOME
-              </span>
+              </Link>
             </div>
             <div className="w-full pb-8">
               <span className="text-base leading-5 tracking-[2.7px]  font-[700] text-white">
