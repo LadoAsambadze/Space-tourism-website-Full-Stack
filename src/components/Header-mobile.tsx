@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [active, setActive] = useState(false);
@@ -43,9 +44,12 @@ export default function Header() {
               <span className="text-base leading-5 tracking-[2.7px]  font-[700] text-white">
                 01
               </span>
-              <span className="text-base leading-5 tracking-[2.7px] ml-3 text-white pointer">
+              <Link
+                to="/destination/moon"
+                className="text-base leading-5 tracking-[2.7px] ml-3 text-white pointer"
+              >
                 DESTINATION
-              </span>
+              </Link>
             </div>
             <div className="w-full pb-8">
               <span className="text-base leading-5 tracking-[2.7px]  font-[700] text-white">
