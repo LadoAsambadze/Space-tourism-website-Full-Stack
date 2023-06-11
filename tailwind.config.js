@@ -26,5 +26,20 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        ".underline-hover-8px": {
+          "&:hover:after": {
+            content: "''",
+            display: "block",
+            width: "100%",
+            height: "3px",
+            background: "white",
+            marginTop: "8px",
+          },
+        },
+      });
+    },
+  ],
 };
