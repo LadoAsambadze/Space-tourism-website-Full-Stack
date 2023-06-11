@@ -1,4 +1,13 @@
+import infos from "../data/data.json";
+import { useParams } from "react-router-dom";
+
 function Destinations(): JSX.Element {
+  const { name } = useParams();
+  const destArray = infos.destinations;
+  const destination = destArray.find(
+    (item) => item.name.toLowerCase() === name
+  );
+
   return (
     <>
       <main className="w-full">
@@ -13,7 +22,7 @@ function Destinations(): JSX.Element {
           </div>
           <div className="pt-8 pb-7 w-full flex items-center justify-center">
             <img
-              src="destination/image-moon.png"
+              src={destination?.images.png}
               alt="moon"
               className="w-[170px] h-[170px]"
             />
@@ -22,9 +31,11 @@ function Destinations(): JSX.Element {
             <span className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer">
               moon
             </span>
+
             <span className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer">
               mars
             </span>
+
             <span className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer">
               europa
             </span>
@@ -33,13 +44,10 @@ function Destinations(): JSX.Element {
             </span>
           </div>
           <h1 className="text-[56px] leading-[64px] text-white text-center font-[Bellefair] mt-8 uppercase tracking-[4px] font-normal">
-            moon
+            {destination?.name}
           </h1>
           <p className="text-base text-[#D0D6F9] leading-6 text-center font-[Barlow] mt-2">
-            See our planet as you’ve never seen it before. A perfect relaxing
-            trip away to help regain perspective and come back refreshed. While
-            you’re there, take in some history by visiting the Luna 2 and Apollo
-            11 landing sites.
+            {destination?.description}
           </p>
           <div className="mt-8 w-full h-[1px] bg-[#383B4B]"></div>
           <div className="w-full mt-8 flex flex-col items-center justify-center">
@@ -48,7 +56,7 @@ function Destinations(): JSX.Element {
                 AVG. DISTANCE
               </span>
               <span className="text-white leading-8 text-3xl uppercase text-center mt-3 font-[Bellefair] ">
-                384,400 km
+                {destination?.distance}
               </span>
             </div>
             <div className="w-full flex flex-col mt-8">
@@ -56,7 +64,7 @@ function Destinations(): JSX.Element {
                 Est. travel time
               </span>
               <span className="text-white leading-8 text-3xl uppercase text-center mt-3 font-[Bellefair] ">
-                3 days
+                {destination?.travel}
               </span>
             </div>
           </div>

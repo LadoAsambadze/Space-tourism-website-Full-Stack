@@ -13,7 +13,7 @@ function App() {
       <HeaderDesktop />
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/destination" element={<Destinations />} />
+        <Route path=":name" element={<Destinations />} />
       </Routes>
     </>
   );
