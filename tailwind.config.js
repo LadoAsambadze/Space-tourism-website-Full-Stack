@@ -11,9 +11,9 @@ export default {
     },
     extend: {
       backgroundImage: {
-        mainmobile: "url('./public/home/background-home-mobile.jpg')",
-        maintablet: "url('./public/home/background-home-tablet.jpg')",
-        maindesktop: "url('./public/home/background-home-desktop.jpg')",
+        mainmobile: "url('/home/background-home-mobile.jpg')",
+        maintablet: "url('/home/background-home-tablet.jpg')",
+        maindesktop: "url('/home/background-home-desktop.jpg')",
       },
       backdropBlur: {
         custom: "40.7742px",
