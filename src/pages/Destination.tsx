@@ -1,5 +1,5 @@
 import infos from "../data/data.json";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function Destinations(): JSX.Element {
   const { name } = useParams();
@@ -38,34 +38,38 @@ function Destinations(): JSX.Element {
               />
             </div>
           </div>
-          <div className="lg:w-[45%] lg:ml-36 lg:mt-8 ">
+          <div className="lg:w-[45%] lg:ml-36 lg:mt-8 sm:flex  sm:flex-col sm:items-center">
             <div className="w-full flex flex-row justify-around  mt-4 px-8 md:px-20 lg:pr-28 lg:pl-0 lg:justify-between  ">
-              <span
+              <Link
+                to="/moon"
                 className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer
             md:text-base md:leading-5 md:tracking-[2.7px] "
               >
                 moon
-              </span>
+              </Link>
 
-              <span
+              <Link
+                to="/mars"
                 className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer
             md:text-base md:leading-5 md:tracking-[2.7px]"
               >
                 mars
-              </span>
+              </Link>
 
-              <span
+              <Link
+                to="/europa"
                 className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer
             md:text-base md:leading-5 md:tracking-[2.7px]"
               >
                 europa
-              </span>
-              <span
+              </Link>
+              <Link
+                to="/titan"
                 className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer
             md:text-base md:leading-5 md:tracking-[2.7px]"
               >
                 titan
-              </span>
+              </Link>
             </div>
             <h1
               className="text-[56px] leading-[64px] text-white text-center font-[Bellefair] mt-8 uppercase tracking-[4px] font-normal
