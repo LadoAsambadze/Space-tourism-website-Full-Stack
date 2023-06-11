@@ -14,6 +14,9 @@ export default {
         mainmobile: "url('/home/background-home-mobile.jpg')",
         maintablet: "url('/home/background-home-tablet.jpg')",
         maindesktop: "url('/home/background-home-desktop.jpg')",
+        destmobile: "url('destination/background-destination-mobile.jpg')",
+        desttablet: "url('destination/background-destination-mobile.jpg')",
+        destdesktop: "url('destination/background-destination-mobile.jpg')",
       },
       backdropBlur: {
         custom: "40.7742px",
