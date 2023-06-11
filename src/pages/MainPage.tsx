@@ -2,7 +2,7 @@ function MainPage(): JSX.Element {
   return (
     <>
       <main className="w-full">
-        <div className="w-full  min-h-screen sm:bg-mainmobile md:bg-maintablet lg:bg-maindesktop  bg-cover bg-no-repeat   ">
+        <div className="w-full  min-h-screen sm:bg-mainmobile md:bg-maintablet   bg-cover bg-no-repeat   ">
           <div className="pt-28 px-6 pb-12 w-full min-h-screen flex flex-col justify-center items-center md:pt-52 md:px-40 md:pb-24 lg:flex-row lg:pt-[387px] lg:items-start lg:justify-between ">
             <div className="w-full flex justify-center items-center flex-col lg:items-start  ">
               <span

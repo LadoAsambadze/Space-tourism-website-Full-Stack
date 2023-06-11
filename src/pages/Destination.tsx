@@ -11,21 +11,23 @@ function Destinations(): JSX.Element {
   return (
     <>
       <main className="w-full">
-        <div className="w-full min-h-screen pt-28 px-6 pb-16  flex flex-col  bg-destmobile bg-no-repeat bg-cover md:pt-[125px] md:pb-16 md:px-24 ">
-          <div className="w-full flex flex-row justify-center items-center md:justify-start">
-            <span className="font-[Barlow-Condensed] text-center text-lg leading-5 tracking-[2.7px] uppercase text-white mix-blend-normal opacity-25 md:text-left md:text-lg md:leading-6 md:tracking-[3.375px]">
-              01
-            </span>
-            <span className="ml-5 font-[Barlow-Condensed] text-base leading-5 tracking-[2.7px] uppercase text-white md:text-lg md:leading-6 md:tracking-[3.375px]">
-              Pick your destination
-            </span>
-          </div>
-          <div className="pt-8 pb-7 w-full flex items-center justify-center md:pt-12">
-            <img
-              src={destination?.images.png}
-              alt="moon"
-              className="w-[170px] h-[170px] md:w-[300px] md:h-[300px]"
-            />
+        <div className="w-full min-h-screen pt-28 px-6 pb-16 sm:justify-center flex flex-col  sm:bg-destmobile md:bg-desttablet lg:bg-destdesktop bg-no-repeat bg-cover md:pt-[125px] md:pb-16 md:px-24 ">
+          <div>
+            <div className="w-full flex flex-row justify-center items-center md:justify-start">
+              <span className="font-[Barlow-Condensed] text-center text-lg leading-5 tracking-[2.7px] uppercase text-white mix-blend-normal opacity-25 md:text-left md:text-lg md:leading-6 md:tracking-[3.375px]">
+                01
+              </span>
+              <span className="ml-5 font-[Barlow-Condensed] text-base leading-5 tracking-[2.7px] uppercase text-white md:text-lg md:leading-6 md:tracking-[3.375px]">
+                Pick your destination
+              </span>
+            </div>
+            <div className="pt-8 pb-7 w-full flex items-center justify-center md:pt-12">
+              <img
+                src={destination?.images.png}
+                alt="moon"
+                className="w-[170px] h-[170px] md:w-[300px] md:h-[300px]"
+              />
+            </div>
           </div>
           <div className="w-full flex flex-row justify-around  mt-4 px-8 md:px-20">
             <span
