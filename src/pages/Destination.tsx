@@ -41,7 +41,7 @@ function Destinations(): JSX.Element {
           <div className="lg:w-[45%] lg:ml-36 lg:mt-8 sm:flex  sm:flex-col sm:items-center">
             <div className="w-full flex flex-row justify-around  mt-4 px-8 md:px-20 lg:pr-28 lg:pl-0 lg:justify-between  ">
               <Link
-                to="/moon"
+                to="/destination/moon"
                 className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer
             md:text-base md:leading-5 md:tracking-[2.7px] "
               >
@@ -49,7 +49,7 @@ function Destinations(): JSX.Element {
               </Link>
 
               <Link
-                to="/mars"
+                to="/destination/mars"
                 className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer
             md:text-base md:leading-5 md:tracking-[2.7px]"
               >
@@ -57,14 +57,14 @@ function Destinations(): JSX.Element {
               </Link>
 
               <Link
-                to="/europa"
+                to="/destination/europa"
                 className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer
             md:text-base md:leading-5 md:tracking-[2.7px]"
               >
                 europa
               </Link>
               <Link
-                to="/titan"
+                to="/destination/titan"
                 className="text-xs leading-4 tracking-[2.3625px] text-[#D0D6F9] font-[Barlow-Condensed] uppercase underline-hover-8px cursor-pointer
             md:text-base md:leading-5 md:tracking-[2.7px]"
               >
