@@ -64,7 +64,10 @@ export default function Header() {
               02
             </span>
             <Link
-              to="/crew"
+              onClick={() => {
+                setActive(false);
+              }}
+              to="/crew/Douglas Hurley"
               className="text-base leading-5 tracking-[2.7px] ml-3 text-white pointer"
             >
               CREW

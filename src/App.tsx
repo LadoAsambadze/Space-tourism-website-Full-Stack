@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/destination/:name" element={<Destinations />} />
-        <Route path="/crew" element={<Crew />} />
+        <Route path="/crew/:name" element={<Crew />} />
       </Routes>
     </>
   );

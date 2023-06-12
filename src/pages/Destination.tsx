@@ -23,6 +23,7 @@ function Destinations(): JSX.Element {
         ` http://localhost:3000/destinations/${name}`
       );
       setDest(response.data.destination);
+      console.log(response);
     } catch (error) {
       console.log(error);
     }
@@ -31,7 +32,7 @@ function Destinations(): JSX.Element {
   useEffect(() => {
     fetch();
   }, [name]);
-  console.log(name);
+
   return (
     <>
       <main className="w-full min-h-screen">
