@@ -42,14 +42,17 @@ export default function HeaderTablet() {
         <div className="flex flex-col">
           <Link
             onClick={() => {
-              setUnder("destination");
+              setUnder("crew");
             }}
-            to="/destination/cref"
+            to="/crew/Douglas Hurley"
             className="text-white text-xs leading-4  tracking-[2.3px] pb-9"
           >
             CREW
           </Link>
-          <div className="w-full bg-white h-[3px] "  style={{ display: under === "crew" ? "block" : "none" }}></div>
+          <div
+            className="w-full bg-white h-[3px] "
+            style={{ display: under === "crew" ? "block" : "none" }}
+          ></div>
         </div>
         <div className="flex flex-col">
           <Link
@@ -58,7 +61,10 @@ export default function HeaderTablet() {
           >
             TECHNOLOGY
           </Link>
-          <div className="w-full bg-white h-[3px] "  style={{ display: under === "technology" ? "block" : "none" }}></div>
+          <div
+            className="w-full bg-white h-[3px] "
+            style={{ display: under === "technology" ? "block" : "none" }}
+          ></div>
         </div>
       </div>
     </div>
