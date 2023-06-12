@@ -28,7 +28,7 @@ export default function HeaderTablet() {
             onClick={() => {
               setUnder("destination");
             }}
-            to="/destination/moon
+            to="/destination/Moon
           "
             className="text-white text-xs leading-4  tracking-[2.3px] pb-9"
           >

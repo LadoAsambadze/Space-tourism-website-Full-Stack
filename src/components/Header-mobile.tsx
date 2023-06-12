@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
 export default function Header() {
   const [active, setActive] = useState(false);
-  console.log(active);
   return (
     <>
       <div className="w-full absolute px-6 pt-6 flex flex-row justify-between items-center md:hidden">
@@ -18,7 +16,7 @@ export default function Header() {
         />
       </div>
       <div
-        className="w-[70%]  bg-[#FFFFFF0A] backdrop-blur-custom bg-divback absolute z-40 right-0 top-0 
+        className="w-[70%]  bg-[#FFFFFF0A] backdrop-blur-custom bg-divback fixed z-40 right-0 top-0 
         pt-8 pr-7 pb-[377px] pl-8 flex flex-col md:hidden lg:hidden "
         style={{ display: active ? "flex" : "none" }}
       >
@@ -49,7 +47,7 @@ export default function Header() {
               01
             </span>
             <Link
-              to="/destination/moon"
+              to="/destination/Moon"
               className="text-base leading-5 tracking-[2.7px] ml-3 text-white pointer"
             >
               DESTINATION

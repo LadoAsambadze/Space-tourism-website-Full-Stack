@@ -29,7 +29,6 @@ function MainPage(): JSX.Element {
             </div>
           </div>
         </div>
-        
       </div>
     </>
   );
