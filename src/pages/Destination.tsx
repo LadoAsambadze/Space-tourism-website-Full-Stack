@@ -23,7 +23,6 @@ function Destinations(): JSX.Element {
         ` http://localhost:3000/destinations/${name}`
       );
       setDest(response.data.destination);
-      console.log(response);
     } catch (error) {
       console.log(error);
     }

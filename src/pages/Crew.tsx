@@ -54,7 +54,7 @@ export default function Crew(): JSX.Element {
           alt={data?.images.png}
         />
         <div className="w-full h-[2px] bg-[#383B4B] md:hidden "></div>
-        <div className="w-full flex flex-row justify-between  mt-8 px-[30%] md:order-2 md:px-[185px]">
+        <div className="w-full flex flex-row justify-between  mt-8 px-[30%] md:order-2 md:px-[35%]">
           <Link
             to="/crew/Douglas Hurley"
             className="w-3 h-3 rounded-full bg-white pointer mix-blend-normal opacity-20"
