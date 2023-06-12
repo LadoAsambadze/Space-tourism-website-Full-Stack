@@ -36,6 +36,9 @@ export default function Header() {
               00
             </span>
             <Link
+              onClick={() => {
+                setActive(false);
+              }}
               to="/"
               className="text-base leading-5 tracking-[2.7px] ml-3 text-white pointer "
             >
@@ -47,6 +50,9 @@ export default function Header() {
               01
             </span>
             <Link
+              onClick={() => {
+                setActive(false);
+              }}
               to="/destination/Moon"
               className="text-base leading-5 tracking-[2.7px] ml-3 text-white pointer"
             >
@@ -57,9 +63,12 @@ export default function Header() {
             <span className="text-base leading-5 tracking-[2.7px]  font-[700] text-white">
               02
             </span>
-            <span className="text-base leading-5 tracking-[2.7px] ml-3 text-white pointer">
+            <Link
+              to="/crew"
+              className="text-base leading-5 tracking-[2.7px] ml-3 text-white pointer"
+            >
               CREW
-            </span>
+            </Link>
           </div>
           <div className="w-full pb-8">
             <span className="text-base leading-5 tracking-[2.7px]  font-[700] text-white">

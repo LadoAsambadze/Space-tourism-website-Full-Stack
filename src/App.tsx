@@ -1,6 +1,7 @@
 import HeaderDesktop from "./components/Header-desktop";
 import Header from "./components/Header-mobile";
 import HeaderTablet from "./components/Header-tablet";
+import Crew from "./pages/Crew";
 
 import Destinations from "./pages/Destination";
 import MainPage from "./pages/MainPage";
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/destination/:name" element={<Destinations />} />
+        <Route path="/crew" element={<Crew />} />
       </Routes>
     </>
   );

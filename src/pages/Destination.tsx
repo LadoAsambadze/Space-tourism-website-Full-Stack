@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import infos from "../data/data.json";
+
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 interface Destination {
@@ -16,10 +16,6 @@ interface Destination {
 function Destinations(): JSX.Element {
   const [dest, setDest] = useState<Destination | null>(null);
   const { name } = useParams();
-  const destArray = infos.destinations;
-  const destination = destArray.find(
-    (item) => item.name.toLowerCase() === name
-  );
 
   const fetch = async () => {
     try {
