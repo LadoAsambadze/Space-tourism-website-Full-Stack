@@ -56,7 +56,7 @@ export default function HeaderTablet() {
         </div>
         <div className="flex flex-col">
           <Link
-            to="/destination/technology"
+            to="/technology/Launch vehicle"
             className="text-white text-xs leading-4  tracking-[2.3px] pb-9"
           >
             TECHNOLOGY

@@ -34,7 +34,7 @@ export default function Crew(): JSX.Element {
         className="w-full min-h-screen sm:bg-crewmobile md:bg-crewtablet bg-no-repeat bg-cover pt-[88px] pb-20 px-6 flex flex-col items-center
       md:pt-[156px] md:pr-[155px] md:pl-[155px] md:pb-0 lg:pt-[212px] lg:pl-40 lg:pr-[137px] lg:flex-row lg:items-start sm:flex-col-reverse md:flex-col"
       >
-        <div className="lg:w-[70%] lg:flex  lg:flex-col lg:items-start lg:justify-start flex flex-col items-center justify-end ">
+        <div className="lg:w-[70%] lg:flex  lg:flex-col lg:items-start lg:justify-start flex flex-col items-center justify-end lg:h-[712px] ">
           <div className="w-full flex flex-row sm:absolute sm:top-[88px] justify-center items-center md:top-[136px] md:justify-start md:absolute md:left-10 md:w-[50%] lg:relative lg:w-[80%]  lg:left-0 lg:mt-0 lg:top-0">
             <span
               className="font-[Barlow-Condensed] text-center text-lg leading-5 tracking-[2.7px] uppercase text-white mix-blend-normal opacity-25 md:text-left md:text-lg md:leading-6 md:tracking-[3.375px]

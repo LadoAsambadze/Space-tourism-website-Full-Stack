@@ -62,7 +62,7 @@ function Destinations(): JSX.Element {
               />
             </div>
           </div>
-          <div className="lg:w-[45%] lg:ml-36 lg:mt-8 sm:flex  sm:flex-col sm:items-center">
+          <div className="lg:w-[45%] lg:ml-36 lg:mt-8 sm:flex  sm:flex-col sm:items-center lg:h-[500px]">
             <div className="w-full flex flex-row justify-around  mt-4 px-8 md:px-20 lg:pr-28 lg:pl-0 lg:justify-between  ">
               <div className="flex flex-col">
                 <Link

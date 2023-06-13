@@ -73,8 +73,7 @@ export default function Header() {
               CREW
             </Link>
           </div>
-          <Link
-            to="/technology"
+          <span
             className="w-full pb-8"
             onClick={() => {
               setActive(false);
@@ -83,10 +82,13 @@ export default function Header() {
             <span className="text-base leading-5 tracking-[2.7px]  font-[700] text-white">
               03
             </span>
-            <span className="text-base leading-5 tracking-[2.7px] ml-3 text-white pointer">
+            <Link
+              to="/technology/Launch vehicle"
+              className="text-base leading-5 tracking-[2.7px] ml-3 text-white pointer"
+            >
               TECHNOLOGY
-            </span>
-          </Link>
+            </Link>
+          </span>
         </div>
       </div>
     </>

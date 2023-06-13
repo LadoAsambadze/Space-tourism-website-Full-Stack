@@ -72,18 +72,16 @@ export default function HeaderDesktop() {
             onClick={() => {
               setUnder("technology");
             }}
-            to="/technology"
+            to="/technology/Launch vehicle"
             className="pointer pb-9"
           >
             <span className="text-white text-xs leading-4 tracking-[2.3px] font-bold ">
               03
             </span>
-            <Link
-              to="/technology/Launch%20vehicle"
-              className="text-white text-xs leading-4 tracking-[2.3px] ml-2"
-            >
+
+            <span className="text-white text-xs leading-4 tracking-[2.3px] ml-2">
               TECHNOLOGY
-            </Link>
+            </span>
           </Link>
           <div
             className="w-full bg-white h-[3px] "
