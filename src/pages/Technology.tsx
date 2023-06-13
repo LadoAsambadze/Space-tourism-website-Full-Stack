@@ -14,7 +14,7 @@ interface Technology {
 export default function Technology() {
   const { name } = useParams();
   const [data, setData] = useState<Technology | null>(null);
-  const [active, setActive] = useState("12");
+  const [active, setActive] = useState("1");
 
   const fetch = async () => {
     try {

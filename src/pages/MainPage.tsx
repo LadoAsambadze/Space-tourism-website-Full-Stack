@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 function MainPage(): JSX.Element {
+  const [active, setActive] = useState(false);
   return (
     <>
       <div className="w-full  min-h-screen sm:bg-mainmobile md:bg-maintablet lg:bg-maindesktop   bg-cover bg-no-repeat   ">
@@ -22,7 +25,15 @@ function MainPage(): JSX.Element {
             </p>
           </div>
           <div className="lg:mt-10 lg:ml-[125px]">
-            <div className="mt-16 rounded-full bg-white w-40 h-40 cursor-pointer flex justify-center items-center md:w-[242px] md:h-[242px]    ">
+            <div
+              className=" mt-16 rounded-full bg-white w-40 h-40 cursor-pointer flex justify-center items-center md:w-[242px] md:h-[242px]"
+              style={{
+                boxShadow: active ? "0 0 0 90px rgba(237, 233, 233, 0.1)" : "0",
+              }}
+              onClick={() => {
+                setActive(!active);
+              }}
+            >
               <span className="font-[Bellefair] tracking-[1.25px] text-xl leading-6 text-[#0B0D17] text-center">
                 EXPLORE
               </span>
