@@ -22,6 +22,10 @@ export default {
           "url('/public/destination/background-destination-desktop.jpg')",
         crewmobile: "url('/public/crew/background-crew-mobile.jpg')",
         crewtablet: "url('/public/crew/background-crew-tablet.jpg')",
+        techmobile:
+          "url('/public/technology/background-technology-mobile.jpg')",
+        techdesktop:
+          "url('/public/technology/background-technology-desktop.jpg')",
       },
 
       backdropBlur: {
