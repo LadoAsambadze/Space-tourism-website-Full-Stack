@@ -52,7 +52,7 @@ export default function HeaderDesktop() {
             onClick={() => {
               setUnder("crew");
             }}
-            to="/crew/DOUGLAS HURLEY"
+            to="/crew/Douglas%20Hurley"
             className="pointer pb-9"
           >
             <span className="text-white text-xs leading-4 tracking-[2.3px] font-bold ">
