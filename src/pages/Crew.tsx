@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 interface Crew {
@@ -11,9 +11,9 @@ interface Crew {
 }
 
 export default function Crew(): JSX.Element {
-  const [active, setActive] = useState("1");
   const [data, setData] = useState<Crew | null>(null);
   const { name } = useParams();
+  const location = useLocation();
 
   const fetch = async () => {
     try {
@@ -52,39 +52,43 @@ export default function Crew(): JSX.Element {
             </span>
           </div>
 
-          <div className="w-full h-[2px] bg-[#383B4B] md:hidden lg:hidden  "></div>
+          <div className="w-full h-[2px] bg-[#383B4B] md:hidden lg:hidden "></div>
           <div className="w-full flex flex-row justify-between  pt-8 md:pt-10 px-[30%]  md:px-[35%] md:order-3  lg:pt-[120px] lg:pl-0 lg:pr-[70%]  lg:pb-[94px]">
             <Link
               to="/crew/Douglas Hurley"
               className="w-3 h-3 rounded-full bg-white pointer mix-blend-normal opacity-20"
-              onClick={() => {
-                setActive("1");
+              style={{
+                opacity:
+                  location.pathname === "/crew/Douglas%20Hurley" ? "1" : "0.20",
               }}
-              style={{ opacity: active === "1" ? "1" : "0.20" }}
             ></Link>
             <Link
               to="/crew/Mark Shuttleworth"
               className="w-3 h-3 rounded-full bg-white pointer mix-blend-normal opacity-20"
-              onClick={() => {
-                setActive("2");
+              style={{
+                opacity:
+                  location.pathname === "/crew/Mark%20Shuttleworth"
+                    ? "1"
+                    : "0.20",
               }}
-              style={{ opacity: active === "2" ? "1" : "0.20" }}
             ></Link>
             <Link
               to="/crew/Victor Glover"
               className="w-3 h-3 rounded-full bg-white pointer mix-blend-normal opacity-20"
-              onClick={() => {
-                setActive("3");
+              style={{
+                opacity:
+                  location.pathname === "/crew/Victor%20Glover" ? "1" : "0.20",
               }}
-              style={{ opacity: active === "3" ? "1" : "0.20" }}
             ></Link>
             <Link
               to="/crew/Anousheh Ansari"
               className="w-3 h-3 rounded-full bg-white pointer mix-blend-normal opacity-20"
-              onClick={() => {
-                setActive("4");
+              style={{
+                opacity:
+                  location.pathname === "/crew/Anousheh%20Ansari"
+                    ? "1"
+                    : "0.20",
               }}
-              style={{ opacity: active === "4" ? "1" : "0.20" }}
             ></Link>
           </div>
           <span

@@ -14,7 +14,6 @@ interface Technology {
 export default function Technology() {
   const { name } = useParams();
   const [data, setData] = useState<Technology | null>(null);
-  const [active, setActive] = useState("1");
 
   const fetch = async () => {
     try {
@@ -59,46 +58,60 @@ export default function Technology() {
 
         <div className="w-full flex flex-row justify-between items-center px-[30%] mt-8 md:mt-14 md:px-[35%]">
           <Link
-            onClick={() => {
-              setActive("1");
-            }}
             to="/technology/Launch vehicle"
             className="flex items-center justify-center px-4 py-3 border-2 border-white   text-black rounded-full pointer font-[Bellefair] text-base leading-4
             md:px-6 md:py-4"
             style={{
-              opacity: active === "1" ? "1" : "0.7",
-              color: active === "1" ? "black" : "white",
-              background: active === "1" ? "white" : "",
+              opacity:
+                location.pathname === "/technology/Launch%20vehicle"
+                  ? "1"
+                  : "0.7",
+              color:
+                location.pathname === "/technology/Launch%20vehicle"
+                  ? "black"
+                  : "white",
+              background:
+                location.pathname === "/technology/Launch%20vehicle"
+                  ? "white"
+                  : "",
             }}
           >
             1
           </Link>
           <Link
-            onClick={() => {
-              setActive("2");
-            }}
             to="/technology/Spaceport"
             className="flex items-center justify-center px-4 py-3 border-2 border-white  text-black rounded-full pointer font-[Bellefair] text-base leading-4
             md:px-6 md:py-4"
             style={{
-              opacity: active === "2" ? "1" : "0.7",
-              color: active === "2" ? "black" : "white",
-              background: active === "2" ? "white" : "",
+              opacity:
+                location.pathname === "/technology/Spaceport" ? "1" : "0.7",
+              color:
+                location.pathname === "/technology/Spaceport"
+                  ? "black"
+                  : "white",
+              background:
+                location.pathname === "/technology/Spaceport" ? "white" : "",
             }}
           >
             2
           </Link>
           <Link
-            onClick={() => {
-              setActive("3");
-            }}
             to="/technology/Space capsule"
             className="flex items-center justify-center px-4 py-3 border-2 border-white  text-black rounded-full pointer font-[Bellefair] text-base leading-4
           md:px-6 md:py-4"
             style={{
-              opacity: active === "3" ? "1" : "0.7",
-              color: active === "3" ? "black" : "white",
-              background: active === "3" ? "white" : "",
+              opacity:
+                location.pathname === "/technology/Space%20capsule"
+                  ? "1"
+                  : "0.7",
+              color:
+                location.pathname === "/technology/Space%20capsule"
+                  ? "black"
+                  : "white",
+              background:
+                location.pathname === "/technology/Space%20capsule"
+                  ? "white"
+                  : "",
             }}
           >
             3
@@ -133,46 +146,62 @@ export default function Technology() {
           <div className="flex flex-row mt-[160px] h-[300px] items-center justify-between">
             <div className=" flex flex-col h-full justify-between ">
               <Link
-                onClick={() => {
-                  setActive("1");
-                }}
                 to="/technology/Launch vehicle"
                 className="flex items-center justify-center border-2 border-white    text-black rounded-full pointer font-[Bellefair] text-[32px] leading-9
                 px-8 py-5"
                 style={{
-                  opacity: active === "1" ? "1" : "0.7",
-                  color: active === "1" ? "black" : "white",
-                  background: active === "1" ? "white" : "",
+                  opacity:
+                    location.pathname === "/technology/Launch%20vehicle"
+                      ? "1"
+                      : "0.7",
+                  color:
+                    location.pathname === "/technology/Launch%20vehicle"
+                      ? "black"
+                      : "white",
+                  background:
+                    location.pathname === "/technology/Launch%20vehicle"
+                      ? "white"
+                      : "",
                 }}
               >
                 1
               </Link>
               <Link
-                onClick={() => {
-                  setActive("2");
-                }}
                 to="/technology/Spaceport"
                 className="flex items-center justify-center border-2 border-white  text-black rounded-full pointer font-[Bellefair] text-[32px] leading-9
                 px-8 py-5"
                 style={{
-                  opacity: active === "2" ? "1" : "0.7",
-                  color: active === "2" ? "black" : "white",
-                  background: active === "2" ? "white" : "",
+                  opacity:
+                    location.pathname === "/technology/Spaceport" ? "1" : "0.7",
+                  color:
+                    location.pathname === "/technology/Spaceport"
+                      ? "black"
+                      : "white",
+                  background:
+                    location.pathname === "/technology/Spaceport"
+                      ? "white"
+                      : "",
                 }}
               >
                 2
               </Link>
               <Link
-                onClick={() => {
-                  setActive("3");
-                }}
                 to="/technology/Space capsule"
                 className="flex items-center justify-center border-2 border-white   text-black rounded-full pointer font-[Bellefair] text-[32px] leading-9
                 px-8 py-5"
                 style={{
-                  opacity: active === "3" ? "1" : "0.7",
-                  color: active === "3" ? "black" : "white",
-                  background: active === "3" ? "white" : "",
+                  opacity:
+                    location.pathname === "/technology/Space%20capsule"
+                      ? "1"
+                      : "0.7",
+                  color:
+                    location.pathname === "/technology/Space%20capsule"
+                      ? "black"
+                      : "white",
+                  background:
+                    location.pathname === "/technology/Space%20capsule"
+                      ? "white"
+                      : "",
                 }}
               >
                 3

@@ -1,21 +1,15 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function HeaderDesktop() {
-  const [under, setUnder] = useState("");
+  const location = useLocation();
 
   return (
     <div className="sm:hidden md:hidden absolute w-full  flex-row  items-center justify-between lg:flex pt-10 pl-14 ">
       <img src="/share/logo.svg" alt="logo" className="w-12 h-12" />
       <div className="w-full ml-[500px]  pt-10 pl-32 pr-40 flex flex-row  items-center justify-between backdrop-blur-custom bg-divBack">
         <div className="flex flex-col">
-          <Link
-            onClick={() => {
-              setUnder("home");
-            }}
-            to="/"
-            className="pointer pb-9"
-          >
+          <Link to="/" className="pointer pb-9">
             <span className="text-white text-xs leading-4 tracking-[2.3px]  font-bold ">
               00
             </span>
@@ -25,17 +19,13 @@ export default function HeaderDesktop() {
           </Link>
           <div
             className="w-full bg-white h-[3px] "
-            style={{ display: under === "home" ? "block" : "none" }}
+            style={{
+              display: location.pathname === "/" ? "block" : "none",
+            }}
           ></div>
         </div>
         <div className="flex flex-col">
-          <Link
-            onClick={() => {
-              setUnder("destination");
-            }}
-            to="/destination/Moon"
-            className="pointer pb-9"
-          >
+          <Link to="/destination/Moon" className="pointer pb-9">
             <span className="text-white text-xs leading-4 tracking-[2.3px] font-bold ">
               01
             </span>
@@ -45,17 +35,15 @@ export default function HeaderDesktop() {
           </Link>
           <div
             className="w-full bg-white h-[3px] "
-            style={{ display: under === "destination" ? "block" : "none" }}
+            style={{
+              display: location.pathname.startsWith("/destination")
+                ? "block"
+                : "none",
+            }}
           ></div>
         </div>
         <div className="flex flex-col">
-          <Link
-            onClick={() => {
-              setUnder("crew");
-            }}
-            to="/crew/Douglas%20Hurley"
-            className="pointer pb-9"
-          >
+          <Link to="/crew/Douglas%20Hurley" className="pointer pb-9">
             <span className="text-white text-xs leading-4 tracking-[2.3px] font-bold ">
               02
             </span>
@@ -65,17 +53,13 @@ export default function HeaderDesktop() {
           </Link>
           <div
             className="w-full bg-white h-[3px] "
-            style={{ display: under === "crew" ? "block" : "none" }}
+            style={{
+              display: location.pathname.startsWith("/crew") ? "block" : "none",
+            }}
           ></div>
         </div>
         <div className="flex flex-col">
-          <Link
-            onClick={() => {
-              setUnder("technology");
-            }}
-            to="/technology/Launch vehicle"
-            className="pointer pb-9"
-          >
+          <Link to="/technology/Launch vehicle" className="pointer pb-9">
             <span className="text-white text-xs leading-4 tracking-[2.3px] font-bold ">
               03
             </span>
@@ -86,7 +70,11 @@ export default function HeaderDesktop() {
           </Link>
           <div
             className="w-full bg-white h-[3px] "
-            style={{ display: under === "technology" ? "block" : "none" }}
+            style={{
+              display: location.pathname.startsWith("/technology")
+                ? "block"
+                : "none",
+            }}
           ></div>
         </div>
       </div>
