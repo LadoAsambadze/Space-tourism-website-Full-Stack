@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export default function HeaderDesktop() {
-  const [under, setUnder] = useState("home");
+  const [under, setUnder] = useState("");
+
   return (
     <div className="sm:hidden md:hidden absolute w-full  flex-row  items-center justify-between lg:flex pt-10 pl-14 ">
       <img src="/share/logo.svg" alt="logo" className="w-12 h-12" />

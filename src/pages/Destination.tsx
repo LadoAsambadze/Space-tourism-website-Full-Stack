@@ -20,7 +20,7 @@ function Destinations(): JSX.Element {
   const fetch = async () => {
     try {
       const response = await axios.get(
-        ` http://localhost:3000/destinations/${name}`
+        `https://snotty-group-production.up.railway.app/destinations/${name}`
       );
       setDest(response.data.destination);
     } catch (error) {

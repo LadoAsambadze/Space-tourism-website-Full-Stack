@@ -24,12 +24,15 @@ export default function Crew(): JSX.Element {
     }
   };
 
+
+
   useEffect(() => {
     fetch();
   }, [name]);
 
   return (
     <>
+    
       <main
         className="w-full min-h-screen sm:bg-crewmobile md:bg-crewtablet bg-no-repeat bg-cover pt-[88px] pb-20 px-6 flex flex-col items-center
       md:pt-[156px] md:pr-[155px] md:pl-[155px] md:pb-0 lg:pt-[212px] lg:pl-40 lg:pr-[137px] lg:flex-row lg:items-start sm:flex-col-reverse md:flex-col"

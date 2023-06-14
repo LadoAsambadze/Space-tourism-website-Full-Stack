@@ -5,15 +5,16 @@ import Crew from "./pages/Crew";
 
 import Destinations from "./pages/Destination";
 import MainPage from "./pages/MainPage";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import Technology from "./pages/Technology";
 
 function App() {
+ 
   return (
     <>
       <Header />
       <HeaderTablet />
-      <HeaderDesktop />
+      <HeaderDesktop  />
 
       <Routes>
         <Route path="/" element={<MainPage />} />
