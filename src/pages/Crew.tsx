@@ -17,14 +17,14 @@ export default function Crew(): JSX.Element {
 
   const fetch = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/crew/${name}`);
+      const response = await axios.get(
+        `https://snotty-group-production.up.railway.app/crew/${name}`
+      );
       setData(response.data.crew);
     } catch (error) {
       console.log(error);
     }
   };
-
-
 
   useEffect(() => {
     fetch();
@@ -32,7 +32,6 @@ export default function Crew(): JSX.Element {
 
   return (
     <>
-    
       <main
         className="w-full min-h-screen sm:bg-crewmobile md:bg-crewtablet bg-no-repeat bg-cover pt-[88px] pb-20 px-6 flex flex-col items-center
       md:pt-[156px] md:pr-[155px] md:pl-[155px] md:pb-0 lg:pt-[212px] lg:pl-40 lg:pr-[137px] lg:flex-row lg:items-start sm:flex-col-reverse md:flex-col"

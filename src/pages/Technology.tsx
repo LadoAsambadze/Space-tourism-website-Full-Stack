@@ -19,7 +19,7 @@ export default function Technology() {
   const fetch = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/technology/${name}`
+        `https://snotty-group-production.up.railway.app/technology/${name}`
       );
       setData(response.data.technology);
     } catch (error) {
